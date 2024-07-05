@@ -6,27 +6,35 @@
     <link rel="stylesheet" href="Front.css">
    
 
-    <script defer src="script.js"></script>
+    <script defer src="front.js"></script>
     <title>EduFiTech</title>
 </head>
 <body>
     <header class="header">
         <div class="header_content">
-            <h1 class="inicio">EduFiTech.</h1>
+            <a href="#incio">
+                <h1 class="inicio">EduFiTech.</h1>
+            </a>
             
-            <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+            <div class="caixa-busca">
+                <input type="text" class="texto-busca" placeholder="Buscar">
+                <a href="#" class="busca-btn">
+                    <img src="search.svg" alt="lupa">
+                </a>
+                
+            </div>
            
 
             <nav class="nav"> 
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#" class="nav_link">Sobre Nós</a>
+                        <a href="#sobre-nos" class="nav_link active">Sobre Nós</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#" class="nav_link">Educação</a>
+                        <a href="#educacao" class="nav_link active">Educação</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#" class="nav_link">Contato</a>
+                        <a href="#contato" class="nav_link active">Contato</a>
                     </li>
                     <li>
                         <a href="login.html"><button class="login">Entrar</button></a>
@@ -37,13 +45,13 @@
         </div>
     </header>
     <main class="main">
-        <section class="section">
+        <section class="section" id="sobre-nos">
             <h2 class="heading">Sobre Nós</h2>
         </section>
-        <section class="section">       
+        <section class="section" id="educacao">       
             <h2 class="heading">Educação</h2>
         </section>
-        <section class="section">
+        <section class="section" id="contato">
             <h2 class="heading">Contato</h2>
         </section>
        
