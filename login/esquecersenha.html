@@ -11,18 +11,16 @@
         <h2>Esqueci Minha Senha</h2>
         <form id="forgotPasswordForm">
             <div class="input-group">
-                <label for="cpf">Digite seu CPF</label>
-                <input type="text" id="cpf" name="cpf" required>
+                <label for="name">Digite seu Nome Completo:</label>
+                <input type="text" id="Nome" name="nome" required>
+                <label for="cpf">Digite seu CPF:</label>
+                <input type="text" id="CPF" name="cpf" required>
+                <label for="password">Digite sua nova senha:</label>
+                <input type="password" id="Senha" name="password" required>
+                <button type="button" id="MostrarSenha">Mostrar Senha</button>
             </div>
-            <button type="submit">Validar CPF</button>
+            <button type="submit">Validar</button>
             <p id="message"></p>
-        </form>
-        <form id="resetPasswordForm" style="display: none;">
-            <div class="input-group">
-                <label for="newPassword">Nova Senha</label>
-                <input type="password" id="newPassword" name="newPassword" required>
-            </div>
-            <button type="submit">Criar Nova Senha</button>
         </form>
     </div>
 
