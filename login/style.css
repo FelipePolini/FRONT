@@ -62,6 +62,8 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size:medium;
+ 
 }
 
 button:hover {
@@ -76,6 +78,7 @@ button:hover {
     margin-bottom: 15px;
     text-align: left;
     width: 50%;
+    font-size: small;
 }
 
 #EsqueciSenhaBtn:hover {
@@ -92,6 +95,7 @@ button:hover {
     border: 1px solid #444;
     margin-top: 10px;
     width: 40%;
+    font-size: small;
   
    
 }
