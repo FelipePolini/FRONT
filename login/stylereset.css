@@ -8,19 +8,24 @@ body {
     height: 100vh;
     background-color: #f4f4f4;
     color: #f64c72;
+ 
+    
 }
 
 .forgot-password-container {
     background-color: #2f2fa2;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
+  
 }
 
 h2 {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+    width: 300px;
+    align-items: center;
 }
 
 .input-group {
@@ -29,8 +34,13 @@ h2 {
 }
 
 .input-group label {
-    display: block;
-    margin-bottom: 15px;
+    display:flex;
+    margin: 10px;
+    margin-bottom: 5px;
+    margin-left: auto;
+  
+   
+ 
 }
 
 .input-group input {
@@ -38,9 +48,22 @@ h2 {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    margin-top: 5px;
 }
+#MostrarSenha {
+   
+    background-color: transparent;
+    color: #ffffff;
+    margin-bottom: 0;
+    text-align: center;
+    width: 40%;
+    display: block;
+    margin-left:auto;
+    font-size: small;
+    margin-top: auto;
+    }
 
-button {
+    button {
     width: 100%;
     padding: 10px;
     background-color: #f64c72;
@@ -48,6 +71,9 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size:medium;
 }
 
 button:hover {
