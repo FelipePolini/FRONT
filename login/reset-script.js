@@ -1,8 +1,21 @@
+document.getElementById('MostrarSenha').addEventListener('click', function() {
+    var passwordField = document.getElementById('Senha');
+    var toggleButton = document.getElementById('MostrarSenha');
+    if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+        toggleButton.textContent = 'Ocultar Senha';
+    } else {
+        passwordField.type = 'password';
+        toggleButton.textContent = 'Mostrar Senha';
+    }
+})
+
 document.getElementById('forgotPasswordForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
     var cpf = document.getElementById('cpf').value;
     var message = document.getElementById('message');
+    
 
     /* Chamada AJAX para verificar o CPF
     fetch('/validate-cpf', {
@@ -62,3 +75,4 @@ document.getElementById('resetPasswordForm').addEventListener('submit', function
         message.textContent = 'Ocorreu um erro. Tente novamente.';
     });
 
+ 
