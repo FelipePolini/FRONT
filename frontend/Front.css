@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1.inicio {
+    color: #f64c72;
+    font-size: 37px;
+    font-style: oblique;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #2f2fa2;
+    z-index: 1000;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.nav_list {
+    display: flex;
+    column-gap: 48px;
+}
+
+.nav_link {
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    transition: all 0.30s;
+}
+.nav_link:hover {
+    color: #ffffff;
+    border-color: #f64c72;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #f64c72;
+    font-size: 17px;
+}
+
+.active {
+    border-color: #f64c72;
+}
+
+button.login {
+    font-size: 17px;
+    background-color: #f64c72;
+    color: #ffffff;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px 10px;
+}
+
+.login:hover {
+    background-color: #2f2fa2;
+    color: #f64c72;
+    font-size: 19px;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section:nth-child(1) {
+    background: #2f2fa24c;
+}
+
+.section:nth-child(2) {
+    background: #2f2fa232;
+}
+
+.section:nth-child(3) {
+    background: #2f2fa2;
+    color: #f64c72;
+}
+
+.heading {
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    .header_content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav_list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav_list.active {
+        display: flex;
+    }
+
+    .header_content {
+        padding: 0 15px;
+    }
+
+    .nav_link {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .login {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+}
