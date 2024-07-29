@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueci Minha Senha - EduFitech</title>
+    <link rel="stylesheet" href="stylereset.css">
+</head>
+<body>
+    <div class="forgot-password-container">
+        <h2>Esqueci Minha Senha</h2>
+        <form id="forgotPasswordForm">
+            <div class="input-group">
+                <label for="name">Digite seu Nome Completo:</label>
+                <input type="text" id="Nome" name="nome" required>
+                <label for="cpf">Digite seu CPF:</label>
+                <input type="text" id="CPF" name="cpf" required>
+                <label for="password">Digite sua nova senha:</label>
+                <input type="password" id="Senha" name="password" required>
+                <button type="button" id="MostrarSenha">Mostrar Senha</button>
+            </div>
+            <button type="submit">Validar</button>
+            <p id="message"></p>
+        </form>
+    </div>
+
+    <script src="reset-script.js"></script>
+</body>
+</html>
+
